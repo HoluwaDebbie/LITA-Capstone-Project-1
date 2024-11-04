@@ -71,7 +71,7 @@ These questions guided a deep dive into the data to reveal product, region, and 
 
 ### Data Analysis and Visualization
 
-1. **Excel Analysis**: I used excel online, so you can get the file here [Download Here](https://www.https://onedrive.live.com/personal/41bec79bae4bb512/_layouts/15/doc.aspx?resid=1dccafa3-7b83-4a87-8775-03d8fe7f4f4f&cid=41bec79bae4bb512&ct=1730713976060&wdOrigin=OFFICECOM-WEB.START.EDGEWORTH&wdPreviousSessionSrc=HarmonyWeb&wdPreviousSession=f07e323f-4750-4a65-a586-c21a601268a0).
+1. **Excel Analysis**: I used excel online, so you can get the file here [Download Here](https://onedrive.live.com/personal/41bec79bae4bb512/_layouts/15/doc.aspx?resid=1dccafa3-7b83-4a87-8775-03d8fe7f4f4f&cid=41bec79bae4bb512&ct=1730713976060&wdOrigin=OFFICECOM-WEB.START.EDGEWORTH&wdPreviousSessionSrc=HarmonyWeb&wdPreviousSession=f07e323f-4750-4a65-a586-c21a601268a0).
    - **Pivot Tables**: Created summary tables for metrics like product sales volume and regional distribution.
      
     Visualization:  
