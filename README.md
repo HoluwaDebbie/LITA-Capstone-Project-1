@@ -98,6 +98,7 @@ These questions guided a deep dive into the data to reveal product, region, and 
    - **Pivot Tables**: Created summary tables for metrics like product sales volume and regional distribution.
      
     Visualization:
+
    
    - **Key Excel-Based Findings**:
      
