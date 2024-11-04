@@ -2,7 +2,7 @@
 
 ---
 
-### Project Title: Sales Performance Analysis for a Retail Store
+## Project Title: Sales Performance Analysis for a Retail Store
 ---
 
 ### Table of Content
