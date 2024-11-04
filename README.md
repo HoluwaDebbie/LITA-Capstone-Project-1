@@ -16,8 +16,6 @@
 
 [Exploratory Data Analysis](#exploratory-data-analysis).
 
-[Key Formulas used in Excel](#key-formulas-used-in-excel).
-
 [Data Analysis and Visualization](#data-analysis-and-visualization).
 
 [Key Findings](#key-findings).
@@ -77,30 +75,26 @@ These questions guided a deep dive into the data to reveal product, region, and 
 
 ---
 
-### Key Formulas Used in Excel
-
-- **Average Sales by Product**: `=TotalSalesperProduct/ COUNTIF( ProductRange, "ProductName")`
-  
-- **Average Quantity Sold by Month**: `=AVERAGEIFS(QuantityRange, MonthRange, "Month")`
-  
-- **Total Sales by Product**: `=SUMIF(ProductRange, "ProductName", QuantityRange)`
-  
-- **Total Revenue by Region**: `=SUMIFS(TotalRevenue, RegionRange, "RegionName")`
-  
-- **Total Revenue for Each Product**: `=SUMIF(ProductRange, "ProductName", RevenueRange)`
-
----
-
 ### Data Analysis and Visualization
 
 1. **Excel Analysis**: I used excel online, so you can get the file here [Download Here](https://1drv.ms/x/c/41bec79bae4bb512/EaOvzB2De4dKh3UD2P5_T08BaV3IeyUJoaf8c_w6c3HF8w?e=Ne8teT).
    
+   - **Key Formulas Used in Excel**
+
+- *Average Sales by Product*: `=TotalSalesperProduct/ COUNTIF( ProductRange, "ProductName")`
+  
+- *Average Quantity Sold by Month*: `=AVERAGEIFS(QuantityRange, MonthRange, "Month")`
+  
+- *Total Sales by Product*: `=SUMIF(ProductRange, "ProductName", QuantityRange)`
+  
+- *Total Revenue by Region*: `=SUMIFS(TotalRevenue, RegionRange, "RegionName")`
+  
+- *Total Revenue for Each Product*: `=SUMIF(ProductRange, "ProductName", RevenueRange)`
+
    - **Pivot Tables**: Created summary tables for metrics like product sales volume and regional distribution.
      
     Visualization: [Pivot Table for Sales Data](https://github.com/user-attachments/assets/497ffdab-5551-4020-b9ea-cc678fba4665)
 
-
-   
    - **Key Excel-Based Findings**:
      
      - **Top Products by Quantity (Total Sales)**: Hats (15,929 units), Shoes (14,402 units), Shirts (12,388 units), Gloves (12,369 units).
@@ -122,19 +116,21 @@ These questions guided a deep dive into the data to reveal product, region, and 
      
        This query calculated the total units sold per product and provided an overall total sales quantity.
 
-   Visualization: 
+   Visualization: [SQL Total Sales by Product](https://github.com/user-attachments/assets/7ffef65f-fa5a-438b-9d29-3dc0c0ebb3de)
 
-     - **Revenue by Product**:
+
+     - **Total Revenue by Product**:
        ```SQL
        SELECT Product, SUM(Quantity * UnitPrice) AS Total_Revenue
        FROM "Sales Data"
        GROUP BY Product
-       ORDER BY Total_Revenue DESC
-       LIMIT 1;
+       UNION ALL
+       SELECT 'Total', SUM(Quantity * UnitPrice)
+       FROM "Sales Data";
        ```
-       Shoes emerged as the top revenue generator with 613,380 in revenue.
+**Visualization**: [SQL total revenue per product](https://github.com/user-attachments/assets/519d415c-87b5-4c02-8bf2-d7b5149839d4)
 
-     - **Monthly Sales Trends**:
+- **Monthly Sales Trends**:
        ```SQL
        SELECT strftime('%Y-%m', OrderDate) AS Month, SUM(Quantity) AS Monthly_Total_Sales
        FROM "Sales Data"
@@ -147,24 +143,25 @@ These questions guided a deep dive into the data to reveal product, region, and 
        ```
        This query identified sales quantity peaks and lows across different months.
 
-       Visualization: 
+  **Visualization**: [SQL monthly sales totals for the current year](https://github.com/user-attachments/assets/455969b2-fad7-40d0-80cb-2643895332fe)
 
-     - **Top Customers by Purchase Value (Total Revenue)**:
+
+     - **Number of Sales Transactions in each Region**:
        ```SQL
-       SELECT * FROM (
-           SELECT "Customer Id", SUM(Quantity * UnitPrice) AS Total_Purchase
-           FROM "Sales Data"
-           GROUP BY "Customer ID"
-           ORDER BY Total_Purchase DESC
-           LIMIT 5
-       )
+       SELECT Region, COUNT(OrderID) AS Sales_Transactions
+       FROM "Sales Data"
+       GROUP BY Region
        UNION ALL
-       SELECT 'Total', SUM(Quantity * UnitPrice)
+       SELECT 'Total', COUNT(OrderID)
        FROM "Sales Data";
+
        ```
-       The top five customers generated a combined total revenue of 142,395, underscoring the significance of repeat high-value purchasers.
+   
+  **Visualization**: [SQL number of sales transactions in each region](https://github.com/user-attachments/assets/df44eb48-2268-444b-812c-5cea612078dc)
+
 
 3. **Power BI Visualization**: Sales Performance Comparison (2023 vs. 2024) You can get the file here [Download Here](https://app.powerbi.com/groups/me/reports/1defa032-0b23-405a-9b42-7e89fdb081b6?ctid=b6de804f-51cd-47ef-a151-26514ed475f0&pbi_source=linkShare&bookmarkGuid=c26374cf-d21e-4a4f-8c66-1f0883790118).
+   
  An interactive comparison of sales performance between 2023 and 2024, highlighting changes in quantity, revenue, and average unit price.
 - *Key Metrics*
 - 2023: 38.7K units, $1.1M revenue, Avg. Price/Unit: $30.69
