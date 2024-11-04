@@ -1,4 +1,5 @@
 # LITA-Capstone-Project-1
+
 ---
 
 ### Project Title: Sales Performance Analysis for a Retail Store
@@ -128,25 +129,26 @@ These questions guided a deep dive into the data to reveal product, region, and 
        SELECT 'Total', SUM(Quantity * UnitPrice)
        FROM "Sales Data";
        ```
+       
 **Visualization**: [SQL total revenue per product](https://github.com/user-attachments/assets/519d415c-87b5-4c02-8bf2-d7b5149839d4)
 
 - **Monthly Sales Trends**:
-       ```SQL
-       SELECT strftime('%Y-%m', OrderDate) AS Month, SUM(Quantity) AS Monthly_Total_Sales
-       FROM "Sales Data"
-       WHERE strftime('%Y', OrderDate) = '2024'
-       GROUP BY Month
-       UNION ALL
-       SELECT 'Total', SUM(Quantity)
-       FROM "Sales Data"
-       WHERE strftime('%Y', OrderDate) = '2024';
-       ```
-       This query identified sales quantity peaks and lows across different months.
+ ```SQL
+  SELECT strftime('%Y-%m', OrderDate) AS Month, SUM(Quantity) AS Monthly_Total_Sales
+FROM "Sales Data"
+WHERE strftime('%Y', OrderDate) = '2024'
+GROUP BY Month
+UNION ALL
+SELECT 'Total', SUM(Quantity)
+FROM "Sales Data"
+WHERE strftime('%Y', OrderDate) = '2024';
+```
 
+  This query identified sales quantity peaks and lows across different months.
   **Visualization**: [SQL monthly sales totals for the current year](https://github.com/user-attachments/assets/455969b2-fad7-40d0-80cb-2643895332fe)
 
 
-     - **Number of Sales Transactions in each Region**:
+   - **Number of Sales Transactions in each Region**:
        ```SQL
        SELECT Region, COUNT(OrderID) AS Sales_Transactions
        FROM "Sales Data"
@@ -180,7 +182,7 @@ These questions guided a deep dive into the data to reveal product, region, and 
 - 2023: Shirt ($0.29M), Shoes ($0.28M)
 - 2024: Shoes ($0.34M), Hat ($0.23M), Shirt ($0.20M)
   
-- *Visualization Highlights*
+- *Visualization Highlights*:
 - Bubble Chart (Product Analysis): Compares Total Revenue, Sales Volume, and Average Price per Unit for each product.
 - Quarterly Revenue: Showcases revenue trends per quarter for both years, highlighting significant growth in Q1 of 2024.
   
