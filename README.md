@@ -7,23 +7,23 @@
 
 ### Table of Content
 
-[Project Overview](#project-overview).
+1. [Project Overview](#project-overview).
 
-[Objectives](#objectives).
+2. [Objectives](#objectives).
 
-[Tools used](#tools-used).
+3. [Tools used](#tools-used).
 
-[Data Cleaning and Preparations](#data-cleaning-and-preparations).
+4. [Data Cleaning and Preparations](#data-cleaning-and-preparations).
 
-[Exploratory Data Analysis](#exploratory-data-analysis).
+5. [Exploratory Data Analysis](#exploratory-data-analysis).
 
-[Data Analysis and Visualization](#data-analysis-and-visualization).
+6. [Data Analysis and Visualization](#data-analysis-and-visualization).
 
-[Key Findings](#key-findings).
+7. [Key Findings](#key-findings).
 
-[Recommendations](#recommendations).
+8. [Recommendations](#recommendations).
 
-[Conclusion](#conclusion).
+9. [Conclusion](#conclusion).
 
 ---
 
@@ -78,7 +78,7 @@ These questions guided a deep dive into the data to reveal product, region, and 
 
 ### Data Analysis and Visualization
 
-1. **Excel Analysis**: I used excel online, so you can get the file here [Download Here](https://1drv.ms/x/c/41bec79bae4bb512/EaOvzB2De4dKh3UD2P5_T08BaV3IeyUJoaf8c_w6c3HF8w?e=Ne8teT).
+1. **Excel Analysis**:Data file can be accessed here: [Download File](https://1drv.ms/x/c/41bec79bae4bb512/EaOvzB2De4dKh3UD2P5_T08BaV3IeyUJoaf8c_w6c3HF8w?e=Ne8teT).
    
    - **Key Formulas Used in Excel**
 
@@ -94,7 +94,7 @@ These questions guided a deep dive into the data to reveal product, region, and 
 
    - **Pivot Tables**: Created summary tables for metrics like product sales volume and regional distribution.
      
-    Visualization: [Pivot Table for Sales Data](https://github.com/user-attachments/assets/497ffdab-5551-4020-b9ea-cc678fba4665)
+    Visualization: ![Pivot Table for Sales Data](https://github.com/user-attachments/assets/497ffdab-5551-4020-b9ea-cc678fba4665)
 
    - **Key Excel-Based Findings**:
      
@@ -117,7 +117,7 @@ These questions guided a deep dive into the data to reveal product, region, and 
      
        This query calculated the total units sold per product and provided an overall total sales quantity.
 
-   Visualization: [SQL Total Sales by Product](https://github.com/user-attachments/assets/7ffef65f-fa5a-438b-9d29-3dc0c0ebb3de)
+   Visualization: ![SQL Total Sales by Product](https://github.com/user-attachments/assets/7ffef65f-fa5a-438b-9d29-3dc0c0ebb3de)
 
 
      - **Total Revenue by Product**:
@@ -130,7 +130,7 @@ These questions guided a deep dive into the data to reveal product, region, and 
        FROM "Sales Data";
        ```
        
-**Visualization**: [SQL total revenue per product](https://github.com/user-attachments/assets/519d415c-87b5-4c02-8bf2-d7b5149839d4)
+**Visualization**: ![SQL total revenue per product](https://github.com/user-attachments/assets/519d415c-87b5-4c02-8bf2-d7b5149839d4)
 
 - **Monthly Sales Trends**:
  ```SQL
@@ -145,7 +145,7 @@ WHERE strftime('%Y', OrderDate) = '2024';
 ```
 
   This query identified sales quantity peaks and lows across different months.
-  **Visualization**: [SQL monthly sales totals for the current year](https://github.com/user-attachments/assets/455969b2-fad7-40d0-80cb-2643895332fe)
+  **Visualization**: ![SQL monthly sales totals for the current year](https://github.com/user-attachments/assets/455969b2-fad7-40d0-80cb-2643895332fe)
 
 
    - **Number of Sales Transactions in each Region**:
@@ -159,10 +159,10 @@ WHERE strftime('%Y', OrderDate) = '2024';
 
        ```
    
-  **Visualization**: [SQL number of sales transactions in each region](https://github.com/user-attachments/assets/df44eb48-2268-444b-812c-5cea612078dc)
+  **Visualization**: ![SQL number of sales transactions in each region](https://github.com/user-attachments/assets/df44eb48-2268-444b-812c-5cea612078dc)
 
 
-3. **Power BI Visualization**: Sales Performance Comparison (2023 vs. 2024) You can get the file here [Download Here](https://app.powerbi.com/groups/me/reports/1defa032-0b23-405a-9b42-7e89fdb081b6?ctid=b6de804f-51cd-47ef-a151-26514ed475f0&pbi_source=linkShare&bookmarkGuid=c26374cf-d21e-4a4f-8c66-1f0883790118).
+3. **Power BI Visualization**: Sales Performance Comparison (2023 vs. 2024) For interactive analysis, access the Power BI dashboard here: [Interactive Dashboard](https://app.powerbi.com/groups/me/reports/1defa032-0b23-405a-9b42-7e89fdb081b6?ctid=b6de804f-51cd-47ef-a151-26514ed475f0&pbi_source=linkShare&bookmarkGuid=c26374cf-d21e-4a4f-8c66-1f0883790118).
    
  An interactive comparison of sales performance between 2023 and 2024, highlighting changes in quantity, revenue, and average unit price.
 - *Key Metrics*
@@ -190,13 +190,13 @@ The Power BI dashboard enables quick, interactive insights for stakeholders, hel
 
 **Visualization**: 
 
-[Sales Dashboard](https://github.com/user-attachments/assets/d52daa07-09ee-435d-a7a2-d13b26aa0cb4)
+![Sales Dashboard](https://github.com/user-attachments/assets/d52daa07-09ee-435d-a7a2-d13b26aa0cb4)
 
-[Sales Dashboard 2023](https://github.com/user-attachments/assets/edc5939b-dbae-440e-a403-2eaf333b1b09)
+![Sales Dashboard 2023](https://github.com/user-attachments/assets/edc5939b-dbae-440e-a403-2eaf333b1b09)
 
-[Sales Dashboard 2024](https://github.com/user-attachments/assets/b742044a-8578-41dd-a1cd-e81b228f5ec3)
+![Sales Dashboard 2024](https://github.com/user-attachments/assets/b742044a-8578-41dd-a1cd-e81b228f5ec3)
 
-[Sales Overview ](https://github.com/user-attachments/assets/ea997f7a-7ae7-4ced-ba41-1d57e4eb4c4d)
+![Sales Overview ](https://github.com/user-attachments/assets/ea997f7a-7ae7-4ced-ba41-1d57e4eb4c4d)
 
 ---
 
@@ -206,6 +206,7 @@ The Power BI dashboard enables quick, interactive insights for stakeholders, hel
 - *Top Products*: Shoes and Hats show strong sales performance and are reliable revenue drivers.
 - *Regional Strength*: The South and East regions consistently contribute to revenue, with the East showing growth potential.
 - *Seasonal Peaks*: February and June are high-sales months; targeted campaigns during these periods could boost sales further.
+- *Spending Consistency*: High-value customers consistently contribute around $4,235 each to the $2.1 million revenue, indicating effective engagement. Targeted loyalty programs, cross-selling for mid-range buyers, and segmentation-based marketing could further boost revenue..
 
 **What Needs Improvement**
 - Low-Sales Months: Sales dip in May and December, suggesting the need for seasonal promotions.
