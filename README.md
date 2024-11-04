@@ -166,16 +166,20 @@ These questions guided a deep dive into the data to reveal product, region, and 
 - *Key Metrics*
 - 2023: 38.7K units, $1.1M revenue, Avg. Price/Unit: $30.69
 - 2024: 29.8K units, $996K revenue, Avg. Price/Unit increased slightly
+  
 - *Regional Revenue Share*
 - 2023: South 43.5%, West 35.6%, East 13%, North 7.8%
 - 2024: South 44.9%, East 24.4%, West 21.5%, North 9.2%
+  
 - *Product Analysis*
 - Top Products by Quantity:
 - 2023: Shirt (9K), Hat (8K), Shoes (8K)
 - 2024: Hat (10K), Shoes (7K), Gloves (6K)
+  
 - Top Products by Revenue:
 - 2023: Shirt ($0.29M), Shoes ($0.28M)
 - 2024: Shoes ($0.34M), Hat ($0.23M), Shirt ($0.20M)
+  
 - *Visualization Highlights*
 - Bubble Chart (Product Analysis): Compares Total Revenue, Sales Volume, and Average Price per Unit for each product.
 - Quarterly Revenue: Showcases revenue trends per quarter for both years, highlighting significant growth in Q1 of 2024.
