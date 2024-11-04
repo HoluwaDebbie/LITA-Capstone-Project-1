@@ -97,7 +97,8 @@ These questions guided a deep dive into the data to reveal product, region, and 
    
    - **Pivot Tables**: Created summary tables for metrics like product sales volume and regional distribution.
      
-    Visualization:
+    Visualization: [Pivot Table for Sales Data](https://github.com/user-attachments/assets/497ffdab-5551-4020-b9ea-cc678fba4665)
+
 
    
    - **Key Excel-Based Findings**:
@@ -185,6 +186,14 @@ These questions guided a deep dive into the data to reveal product, region, and 
 The Power BI dashboard enables quick, interactive insights for stakeholders, helping identify strengths, weaknesses, and strategic opportunities.
 
 **Visualization**: 
+
+[Sales Dashboard](https://github.com/user-attachments/assets/d52daa07-09ee-435d-a7a2-d13b26aa0cb4)
+
+[Sales Dashboard 2023](https://github.com/user-attachments/assets/edc5939b-dbae-440e-a403-2eaf333b1b09)
+
+[Sales Dashboard 2024](https://github.com/user-attachments/assets/b742044a-8578-41dd-a1cd-e81b228f5ec3)
+
+[Sales Overview ](https://github.com/user-attachments/assets/ea997f7a-7ae7-4ced-ba41-1d57e4eb4c4d)
 
 ---
 
