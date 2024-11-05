@@ -206,8 +206,8 @@ The Power BI dashboard enables quick, interactive insights for stakeholders, hel
 - *Top Products*: Shoes and Hats show strong sales performance and are reliable revenue drivers.
 - *Regional Strength*: The South and East regions consistently contribute to revenue, with the East showing growth potential.
 - *Seasonal Peaks*: February and June are high-sales months; targeted campaigns during these periods could boost sales further.
-- *Spending Consistency*: High-value customers consistently contribute around $4,235 each to the $2.1 million revenue, indicating effective engagement. Targeted loyalty programs, cross-selling for mid-range buyers, and segmentation-based marketing could further boost revenue..
-
+- *High-Value Customers*: A core group of high-value customers spends around $4,235 each, contributing significantly to total revenue. Targeted loyalty programs could maximize their engagement.
+  
 **What Needs Improvement**
 - Low-Sales Months: Sales dip in May and December, suggesting the need for seasonal promotions.
 - Underperformance in the West Region: Limited sales growth in the West region calls for targeted marketing efforts.
